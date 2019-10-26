@@ -9,11 +9,9 @@ body {
   left: 0;
   width: 16rem;
   padding: 1rem;
-  background: var(--bg-gradient);
-  color: var(--dark-text-color);
+  background: var(--background-color);
 }
 .side-bar h1 {
-  color: var(--dark-text-title-color);
   font-size: 1.5rem;
 }
 .side-bar nav>ul {

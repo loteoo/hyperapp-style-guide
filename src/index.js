@@ -21,7 +21,7 @@ app({
     <div id="top" class="page" role="document">
       <aside class="side-bar">
         <header role="banner">
-          <h1>HTML5 Test Page</h1>
+          <h1>Hyperapp Style Guide</h1>
           <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
         </header>
         <nav role="navigation">
@@ -404,16 +404,18 @@ app({
             <fieldset id="forms__action">
               <legend>Action buttons</legend>
               <p>
-                <input type="submit" value="<input type=submit>" />
-                <input type="button" value="<input type=button>" />
-                <input type="reset" value="<input type=reset>" />
-                <input type="submit" value="<input disabled>" disabled />
+                <input type="submit" value="<input type=submit>" class="btn" />
+                <input type="button" value="<input type=button>" class="btn" />
+                <input type="reset" value="<input type=reset>" class="btn" />
+                <input type="submit" value="<input disabled>" class="btn" disabled />
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
               </p>
               <p>
-                <button type="submit">&lt;button type=submit&gt;</button>
-                <button type="button">&lt;button type=button&gt;</button>
-                <button type="reset">&lt;button type=reset&gt;</button>
-                <button type="button" disabled>&lt;button disabled&gt;</button>
+                <button class="btn" type="submit">&lt;button type=submit&gt;</button>
+                <button class="btn" type="button">&lt;button type=button&gt;</button>
+                <button class="btn" type="reset">&lt;button type=reset&gt;</button>
+                <button class="btn" type="button" disabled>&lt;button disabled&gt;</button>
               </p>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
@@ -433,8 +435,6 @@ app({
           </form>
         </section>
         <footer>
-          <header><h2>State view</h2></header>
-          <pre>{JSON.stringify(state, null, 2)}</pre>
         </footer>
       </main>
     </div>

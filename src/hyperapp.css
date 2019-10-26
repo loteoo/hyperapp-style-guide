@@ -30,6 +30,15 @@ body {
 	color: var(--background-color);
 }
 
+label {
+  display: block;
+}
+
+button, input, select, textarea {
+  border: none;
+  padding: 0.5rem 0;
+}
+
 iframe,
 img,
 input,
@@ -53,4 +62,17 @@ pre code {
 
 .nice-button {
   padding: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--accent-color);
+}
+
+input {
+
 }
