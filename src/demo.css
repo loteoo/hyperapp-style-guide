@@ -1,22 +1,25 @@
-
 body {
-  background: var(--alt-background-color);
+  --side-bar-width: 16rem;
+}
+@media (min-width: 1024px) {
+  body {
+    --side-bar-width: 25vw;
+  }
 }
 .side-bar {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 24rem;
-  padding: 3rem;
-  background: var(--background-color);
+  width: var(--side-bar-width);
+  padding: 2rem;
+  background-color: var(--chalk-white);
   overflow: auto;
 }
-
-.side-bar nav>ul {
+.side-bar nav ul {
   padding-left: 0;
 }
 .main-content {
-  margin-left: 24rem;
-  padding: 3rem;
+  margin-left: var(--side-bar-width);
+  padding: 4rem;
 }

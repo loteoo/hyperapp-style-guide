@@ -440,6 +440,5 @@ app({
       </main>
     </div>
   ),
-  subscriptions: console.log,
   node: document.getElementById('app')
 })
