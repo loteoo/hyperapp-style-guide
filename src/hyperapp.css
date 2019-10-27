@@ -203,9 +203,9 @@ button,
   border: 1px solid currentColor;
   cursor: pointer;
 }
-button + button,
-.button + .button {
-  margin-left: 1rem;
+button ~ button,
+.button ~ .button {
+  margin-right: 1rem;
 }
 button:hover,
 .button:hover {
