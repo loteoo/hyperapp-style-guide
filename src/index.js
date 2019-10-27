@@ -185,9 +185,13 @@ app({
           <article id="text__code">
             <header><h1>Code</h1></header>
             <div>
-              <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
-              <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
-              <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
+              <p>Keyboard input: <kbd>Cmd</kbd></p>
+              <p>Inline code: <code>&lt;div&gt;code&lt;/div&gt;</code></p>
+              <p>Sample output: <samp>This is sample output from a computer program.</samp></p>
+              <p>Block of code:</p>
+              <pre><code>{`<script type=”module”>
+  import { h, app } from ”https://unpkg.com/hyperapp”
+</script>`}</code></pre>
               <h2>Pre-formatted text</h2>
               <pre>{`P R E F O R M A T T E D T E X T
   ! " # $ % &amp; ' ( ) * + , - . /

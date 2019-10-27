@@ -6,6 +6,7 @@
 
 /* Import font configurations */
 @import './fonts/IBMPlexSans/ibm_plex_sans.css';
+@import './fonts/FiraCode/fira_code.css';
 
 
 /* === Global variables === */
@@ -62,18 +63,22 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 3.375rem; /* 54px */
+  font-weight: 300;
 }
 h2, .h2 {
   font-size: 2.625rem; /* 42px */
+  font-weight: 300;
 }
 h3, .h3 {
   font-size: 1.75rem; /* 28px */
+  font-weight: 300;
 }
 h4, .h4 {
   font-size: 1.5rem; /* 24px */
 }
-h5, .h5, h6 .h6 {
+h5, .h5, h6, .h6 {
   font-size: 1.25rem; /* 20px */
+  margin: 1em 0;
 }
 
 label {
@@ -94,18 +99,24 @@ textarea {
   max-width: 100%;
 }
 
-code {
+
+kbd, samp, code {
   display: inline-block;
+  color: var(--dark-color);
+  font-family: 'Fira Code', monospace;
   font-size: 1rem;
 }
 
 pre code {
   display: block;
-  padding: 1rem;
+  padding: 1rem 0;
 }
+
+
 
 em {
   color: var(--dark-color);
+  font-weight: 500;
 }
 
 a {
