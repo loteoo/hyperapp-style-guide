@@ -17,7 +17,7 @@ app({
       <aside class="side-bar">
         <header role="banner">
           <h1 class="h3">Hyperapp Style Guide</h1>
-          <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
+          <small>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</small>
         </header>
         <nav role="navigation">
           <ul>
@@ -399,18 +399,20 @@ app({
             <fieldset id="forms__action">
               <legend>Action buttons</legend>
               <p>
-                <input type="submit" value="<input type=submit>" class="btn" />
-                <input type="button" value="<input type=button>" class="btn" />
-                <input type="reset" value="<input type=reset>" class="btn" />
-                <input type="submit" value="<input disabled>" class="btn" disabled />
-                <button type="button" class="btn btn-primary">Primary</button>
-                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="button-primary">primary button</button>
+                <button type="button">secondary button</button>
               </p>
               <p>
-                <button class="btn" type="submit">&lt;button type=submit&gt;</button>
-                <button class="btn" type="button">&lt;button type=button&gt;</button>
-                <button class="btn" type="reset">&lt;button type=reset&gt;</button>
-                <button class="btn" type="button" disabled>&lt;button disabled&gt;</button>
+                <input class="button" type="submit" value="<input type=submit>" />
+                <input class="button" type="button" value="<input type=button>" />
+                <input class="button" type="reset" value="<input type=reset>" />
+                <input class="button" type="submit" value="<input disabled>" disabled />
+              </p>
+              <p>
+                <button type="submit">&lt;button type=submit&gt;</button>
+                <button type="button">&lt;button type=button&gt;</button>
+                <button type="reset">&lt;button type=reset&gt;</button>
+                <button type="button" disabled>&lt;button disabled&gt;</button>
               </p>
             </fieldset>
             <p><a href="#top">[Top]</a></p>

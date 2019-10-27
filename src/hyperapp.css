@@ -149,6 +149,7 @@ td {
 
 
 
+/* Typography */
 strong {
   color: var(--dark-color);
   font-weight: 500;
@@ -164,19 +165,66 @@ mark {
 	background: var(--hyperapp-blue);
 	color: var(--light-color);
 }
-
-.nice-button {
-  padding: 1rem;
+small {
+  font-size: 1rem;
 }
 
-.btn {
+
+
+
+
+/* Forms */
+fieldset {
+  border: 1px solid var(--dark-color);
+}
+legend, label {
+  color: var(--dark-color);
+}
+
+
+
+/* Buttons */
+
+button,
+.button {
   padding: 0.5rem 1rem;
+  color: var(--dark-color);
+  border: 1px solid currentColor;
+  cursor: pointer;
+}
+button + button,
+.button + .button {
+  margin-left: 1rem;
+}
+button:hover,
+.button:hover {
+  color: var(--hyperapp-blue);
+}
+button:active,
+.button:active {
+  color: var(--light-color);
+  background-color: var(--hyperapp-blue);
+  border-color: var(--hyperapp-blue);
+  outline: none;
 }
 
-.btn-primary {
-  color: white;
-  background-color: var(--accent-color);
+
+
+.button-primary {
+  color: var(--light-color);
+  background-color: var(--hyperapp-blue);
+  border-color: var(--hyperapp-blue);
 }
+.button-primary:hover {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+}
+.button-primary:active {
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
 
 input {
 
