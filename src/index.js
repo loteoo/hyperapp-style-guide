@@ -1,11 +1,6 @@
 import { app } from 'hyperapp'
 import { NiceInput } from './components/NiceInput'
 
-// Import best-practices css defaults
-import 'sanitize.css'
-import 'sanitize.css/typography.css'
-import 'sanitize.css/forms.css'
-
 // Style guide
 import './hyperapp.css'
 
@@ -17,11 +12,11 @@ app({
   init: {
     menuOpened: window.innerWidth < 480
   },
-  view: state => (
+  view: (state) => (
     <div id="top" class="page" role="document">
       <aside class="side-bar">
         <header role="banner">
-          <h1>Hyperapp Style Guide</h1>
+          <h1 class="h3">Hyperapp Style Guide</h1>
           <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
         </header>
         <nav role="navigation">

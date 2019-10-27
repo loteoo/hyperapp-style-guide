@@ -10,15 +10,11 @@ body {
   width: 16rem;
   padding: 1rem;
   background: var(--background-color);
+  overflow: auto;
 }
-.side-bar h1 {
-  font-size: 1.5rem;
-}
+
 .side-bar nav>ul {
   padding-left: 0;
-}
-.side-bar * {
-  color: inherit;
 }
 .main-content {
   margin-left: 16rem;

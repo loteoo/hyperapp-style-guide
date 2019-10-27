@@ -1,33 +1,79 @@
 
+/* Start with best-practices css defaults */
+@import 'sanitize.css';
+@import 'sanitize.css/typography.css';
+@import 'sanitize.css/forms.css';
+
+/* Import font configurations */
 @import './fonts/IBMPlexSans/ibm_plex_sans.css';
+
 
 /* === Global variables === */
 :root {
-	--background-color: #ffffff;
-	--alt-background-color: #f4f4f4;
-	--text-color: #121212;
-  --accent-color: #0000FF;
-  --border-color: #eeeeee;
-  --success-color: #06d19c;
-  --danger-color: tomato;
+
+  /* Brand colors */
+  --hyperapp-blue: #1661EE;
+  --light-color: #ffffff;
+  --dark-color: #091226;
+  --chalk-white: #F3F4F7;
+  --text-grey: #9DA0A8;
+  --subtle-grey: #DADFE1;
+  --darker-grey: #989898;
+
 }
 
 /* === Default cascade === */
 html {
   font-family: 'IBM Plex Sans', sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  color: var(--text-grey);
+  background-color: var(--light-color);
   scroll-behavior: smooth;
 }
 
 body {
   position: relative;
   overflow-x: hidden;
+  font-size: 1.25rem; /* 20px */
 }
 
 ::selection {
-	background: var(--accent-color);
-	color: var(--background-color);
+	background: var(--hyperapp-blue);
+	color: var(--light-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: var(--dark-color);
+  font-weight: normal;
+}
+
+h1, .h1 {
+  font-size: 3.375rem; /* 54px */
+}
+h2, .h2 {
+  font-size: 2.625rem; /* 42px */
+}
+h3, .h3 {
+  font-size: 1.75rem; /* 28px */
+}
+h4, .h4 {
+  font-size: 1.5rem; /* 24px */
+}
+h5, .h5, h6 .h6 {
+  font-size: 1.25rem; /* 20px */
 }
 
 label {
@@ -50,14 +96,73 @@ textarea {
 
 code {
   display: inline-block;
-  background-color: var(--alt-background-color);
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
+  font-size: 1rem;
 }
 
 pre code {
   display: block;
   padding: 1rem;
+}
+
+em {
+  color: var(--dark-color);
+}
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+blockquote {
+  color: var(--dark-color);
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  border-left: 1px solid var(--subtle-grey);
+  margin-left: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--subtle-grey);
+}
+
+table {
+}
+caption {
+  color: var(--dark-color);
+  font-weight: 500;
+}
+th {
+  color: var(--dark-color);
+  font-weight: normal;
+  padding: 0.5rem;
+  text-align: left;
+}
+td {
+  padding: 0.5rem;
+}
+
+
+
+strong {
+  color: var(--dark-color);
+  font-weight: 500;
+}
+b {
+  color: var(--dark-color);
+  font-weight: 400;
+}
+i, u, del, ins, s, q, abbr, cite, dfn, var, time {
+  color: var(--dark-color);
+}
+mark {
+	background: var(--hyperapp-blue);
+	color: var(--light-color);
 }
 
 .nice-button {
