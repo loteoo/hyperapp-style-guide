@@ -32,6 +32,7 @@ app({
                 <li><a href="#text__tables">Tabular data</a></li>
                 <li><a href="#text__code">Code</a></li>
                 <li><a href="#text__inline">Inline elements</a></li>
+                <li><a href="#text__links">Link styles</a></li>
               </ul>
             </li>
             <li>
@@ -224,6 +225,13 @@ app({
               <p>The <mark>mark element</mark> indicates a highlight.</p>
               <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
               <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__links">
+            <header><h1>Link styles</h1></header>
+            <div>
+              <p><a class="arrow-link" href="#!">Arrow link</a></p>
             </div>
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
