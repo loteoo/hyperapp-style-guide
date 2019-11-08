@@ -1,6 +1,7 @@
 
 export default ({ ...props }) => (
-  <div>
+  <div class="nice-input">
     <input type="text" {...props} />
+    
   </div>
 )

@@ -11,8 +11,6 @@
 
 /* === Global variables === */
 :root {
-
-  /* Brand colors */
   --primary-blue: #1661EE;
   --dark-blue: #091226;
   --body-text-grey: #9DA0A8;
@@ -21,15 +19,13 @@
   --disabled-grey-2: #F3F4F7;
   --active-input-text: #DADFE1;
   --line-separator: #EEF0F3;
-  --light-color: #ffffff;
-
 }
 
 /* === Default cascade === */
 html {
   font-family: 'IBM Plex Sans', sans-serif;
-  color: var(--text-grey);
-  background-color: var(--light-color);
+  color: var(--body-text-grey);
+  background-color: white;
   scroll-behavior: smooth;
 }
 
@@ -40,8 +36,8 @@ body {
 }
 
 ::selection {
-	background: var(--hyperapp-blue);
-	color: var(--light-color);
+	background: var(--primary-blue);
+	color: white;
 }
 
 
@@ -59,7 +55,7 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: var(--dark-color);
+  color: var(--dark-blue);
   font-weight: normal;
 }
 
@@ -104,7 +100,7 @@ textarea {
 
 kbd, samp, code {
   display: inline-block;
-  color: var(--dark-color);
+  color: var(--dark-blue);
   font-family: 'Fira Code', monospace;
   font-size: 1rem;
 }
@@ -117,18 +113,18 @@ pre code {
 
 
 em {
-  color: var(--dark-color);
+  color: var(--dark-blue);
   font-weight: 500;
 }
 
 a {
-  color: var(--dark-color);
+  color: var(--dark-blue);
 }
 a:hover {
-  color: var(--hyperapp-blue);
+  color: var(--primary-blue);
 }
 a:active {
-  color: var(--text-grey);
+  color: var(--body-text-grey);
 }
 
 .arrow-link {
@@ -186,26 +182,27 @@ a:active {
 
 
 blockquote {
-  color: var(--dark-color);
+  color: var(--dark-blue);
   font-size: 1.5rem;
   padding: 1rem 3rem;
-  border-left: 1px solid var(--subtle-grey);
+  border-left: 1px solid var(--line-separator);
   margin-left: 0;
 }
 
 hr {
   border: none;
-  border-top: 1px solid var(--subtle-grey);
+  border-top: 1px solid var(--line-separator);
+  margin: 1rem 0;
 }
 
 table {
 }
 caption {
-  color: var(--dark-color);
+  color: var(--dark-blue);
   font-weight: 500;
 }
 th {
-  color: var(--dark-color);
+  color: var(--dark-blue);
   font-weight: normal;
   padding: 0.5rem;
   text-align: left;
@@ -218,19 +215,19 @@ td {
 
 /* Typography */
 strong {
-  color: var(--dark-color);
+  color: var(--dark-blue);
   font-weight: 500;
 }
 b {
-  color: var(--dark-color);
+  color: var(--dark-blue);
   font-weight: 400;
 }
 i, u, del, ins, s, q, abbr, cite, dfn, var, time {
-  color: var(--dark-color);
+  color: var(--dark-blue);
 }
 mark {
-	background: var(--hyperapp-blue);
-	color: var(--light-color);
+	background: var(--primary-blue);
+	color: white;
 }
 small {
   font-size: 1rem;
@@ -242,10 +239,10 @@ small {
 
 /* Forms */
 fieldset {
-  border: 1px solid var(--dark-color);
+  border: 1px solid var(--dark-blue);
 }
 legend, label {
-  color: var(--dark-color);
+  color: var(--dark-blue);
 }
 
 
@@ -255,9 +252,11 @@ legend, label {
 button,
 .button {
   padding: 0.5rem 1rem;
-  color: var(--dark-color);
+  color: var(--dark-blue);
   border: 1px solid currentColor;
   cursor: pointer;
+  min-height: 3rem;
+  min-width: 3rem;
 }
 button + button,
 .button + .button {
