@@ -265,31 +265,86 @@ button + button,
 }
 button:hover,
 .button:hover {
-  color: var(--hyperapp-blue);
+  color: var(--primary-blue);
 }
 button:active,
 .button:active {
-  color: var(--light-color);
-  background-color: var(--hyperapp-blue);
-  border-color: var(--hyperapp-blue);
+  color: white;
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
   outline: none;
 }
 
 
 
-.button-primary {
-  color: var(--light-color);
-  background-color: var(--hyperapp-blue);
-  border-color: var(--hyperapp-blue);
+.primary-button {
+  color: white;
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
 }
-.button-primary:hover {
-  color: var(--light-color);
-  background-color: var(--dark-color);
-  border-color: var(--dark-color);
+.primary-button:hover {
+  color: white;
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
 }
-.button-primary:active {
-  color: var(--dark-color);
-  background-color: var(--light-color);
+.primary-button:active {
+  color: var(--dark-blue);
+  background-color: white;
+}
+
+.square-button {
+  font-size: 0;
+  color: white;
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+}
+.square-button::before,
+.square-button::after {
+  content: '';
+  display: block;
+  background-color: currentColor;
+  position: absolute;
+}
+.square-button::before {
+  top: 0.75rem;
+  bottom: 0.75rem;
+  width: 1px;
+}
+.square-button::after {
+  left: 0.75rem;
+  right: 0.75rem;
+  height: 1px;
+}
+.square-button:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+.square-button:hover::before {
+  top: 0;
+  bottom: 0;
+}
+.square-button:hover::after {
+  left: 0;
+  right: 0;
+}
+.square-button:active {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+.square-button:active::before {
+  top: 0;
+  bottom: 0;
+}
+.square-button:active::after {
+  left: 0;
+  right: 0;
 }
 
 

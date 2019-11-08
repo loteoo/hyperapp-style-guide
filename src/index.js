@@ -412,7 +412,7 @@ app({
             <fieldset id="forms__action">
               <legend>Action buttons</legend>
               <p>
-                <button type="button" class="button-primary">primary button</button>
+                <button type="button" class="primary-button">primary button</button>
                 <button type="button">secondary button</button>
               </p>
               <p>
@@ -420,6 +420,9 @@ app({
                 <input class="button" type="button" value="<input type=button>" />
                 <input class="button" type="reset" value="<input type=reset>" />
                 <input class="button" type="submit" value="<input disabled>" disabled />
+              </p>
+              <p>
+                <button class="square-button" type="button">square button</button>
               </p>
               <p>
                 <button type="submit">&lt;button type=submit&gt;</button>
