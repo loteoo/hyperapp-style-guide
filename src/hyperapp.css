@@ -13,13 +13,15 @@
 :root {
 
   /* Brand colors */
-  --hyperapp-blue: #1661EE;
+  --primary-blue: #1661EE;
+  --dark-blue: #091226;
+  --body-text-grey: #9DA0A8;
+  --error-red: #FF4545;
+  --disabled-grey: #989898;
+  --disabled-grey-2: #F3F4F7;
+  --active-input-text: #DADFE1;
+  --line-separator: #EEF0F3;
   --light-color: #ffffff;
-  --dark-color: #091226;
-  --chalk-white: #F3F4F7;
-  --text-grey: #9DA0A8;
-  --subtle-grey: #DADFE1;
-  --darker-grey: #989898;
 
 }
 
