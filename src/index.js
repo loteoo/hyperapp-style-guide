@@ -1,5 +1,5 @@
 import { app } from 'hyperapp'
-import { NiceInput } from './components/NiceInput'
+import NiceInput from './components/NiceInput'
 
 // Style guide
 import './hyperapp.css'
@@ -434,14 +434,19 @@ app({
             <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__custom_inputs">
               <legend>Custom form inputs</legend>
+
               <NiceInput
-                label="Text input"
-                name="input-1"
+                label="Enter your email"
+                name="email"
+                type="email"
               />
+
               <NiceInput
-                label="Text input"
-                name="input-2"
-                hint="This is a hint"
+                label="Enter your email"
+                name="email"
+                type="email"
+                value="not a mail"
+                error="wrong mail format"
               />
             </fieldset>
             <p><a href="#top">[Top]</a></p>
